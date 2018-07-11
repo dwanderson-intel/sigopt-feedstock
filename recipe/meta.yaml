@@ -1,7 +1,7 @@
 {% set name = "sigopt" %}
-{% set version = "3.0.0" %}
+{% set version = "3.4.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "3de2586aaf1b1977ae51574990a0b54e2804c514723a23e71c028f0dcdd6287f" %}
+{% set hash_value = "88e149aee6a771018b5f5a7ae7adfa317eec780801758799495c0f7c8873c872" %}
 
 package:
   name: {{ name|lower }}
@@ -15,13 +15,13 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
     - requests >=2.11.1
-    - setuptools
+    - pip
   run:
     - python
     - requests >=2.11.1
