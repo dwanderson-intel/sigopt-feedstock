@@ -1,7 +1,7 @@
 {% set name = "sigopt" %}
-{% set version = "3.5.0" %}
+{% set version = "3.6.2" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "b0d6062b8c4a5eb6efa268065de887a680f0690e1a33670eb3d4b81677b884f4" %}
+{% set hash_value = "c845515ae65c45378ddf11c269c35791ce45c4816fd740196c538b702fd3f1ea" %}
 
 package:
   name: {{ name|lower }}
