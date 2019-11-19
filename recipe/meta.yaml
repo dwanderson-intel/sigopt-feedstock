@@ -1,7 +1,7 @@
 {% set name = "sigopt" %}
-{% set version = "5.0.0" %}
+{% set version = "5.3.1" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "4a17ba9df3d9b69ca8770bdc21f19c06553983ea6d86b9e2d959e7ecb5467dfe" %}
+{% set hash_value = "00926b9b059acbc7f3e55365cdf281c7b8446eb7cbd0cb9bcbf3d22dd8f14aa9" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
