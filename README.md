@@ -117,4 +117,4 @@ Feedstock Maintainers
 =====================
 
 * [@pfhayes](https://github.com/pfhayes/)
-* [@dwanderson-intel[(https://github.com/dwanderson-intel/)
+* [@dwanderson-intel](https://github.com/dwanderson-intel/)
